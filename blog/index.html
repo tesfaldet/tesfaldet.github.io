@@ -12,12 +12,14 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <span class="post-meta">Posted on {{ post.date | date: "%b %-d, %Y" }}</span>
-        {% for tag in post.tags %}
-          <li>
-            <a href="/blog/tags/#{{ tag }}"><span class="label">{{ tag }}</span></a>
-          </li>
-        {% endfor %}
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.categories.size != 0 or post.tags.size != 0 %} •{% endif %}
+          {% for category in post.categories %}
+            <a href="/blog/categories/#{{ category }}"><span itemprop="keywords" class="label category">{{ category }}</span></a>
+          {% endfor %}
+          {% for tag in post.tags %}
+            <a href="/blog/tags/#{{ tag }}"><span itemprop="keywords" class="label tag">{{ tag }}</span></a>
+          {% endfor %}
+        </span>
       </li>
     {% endfor %}
   </ul>

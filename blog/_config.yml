@@ -9,10 +9,12 @@
 title: thisblog
 email: tesfaldet@hotmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Programmer // Music nerd
+  Forever a student in computer science. A music nerd with a penchant for graphic design; interested in the fields of
+  computer vision, machine learning, and computer graphics.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://mtesfaldet.net" # the base hostname & protocol for your site
 github_username: tesfaldet
+owner: "Matthew Tesfaldet"
 
 # Build settings
 markdown: kramdown

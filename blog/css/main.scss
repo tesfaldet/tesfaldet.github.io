@@ -3,10 +3,23 @@
 ---
 @charset "utf-8";
 
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic,700,700italic);
+@font-face {
+  font-family: 'octicons';
+  src: url('../fonts/octicons.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/octicons.woff') format('woff'),
+       url('../fonts/octicons.ttf') format('truetype'),
+       url('../fonts/octicons.svg#octicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Merriweather", Georgia, "Times New Roman", serif;
+$base-font-family-sans: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -14,9 +27,9 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #515151;
 $background-color: white;
-$brand-color:      #2a7ae2;
+$brand-color:      #ED4952;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);

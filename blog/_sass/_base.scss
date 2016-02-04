@@ -82,6 +82,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
+    font-family: $base-font-family-sans;
     font-weight: $base-font-weight;
 }
 
@@ -95,12 +96,11 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: lighten($brand-color, 15%);
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: darken($text-color, 10%);
     }
 }
 
@@ -191,16 +191,23 @@ pre {
 /**
  * Icons
  */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
-    }
+.octicon, .mega-octicon {
+  display: inline-block;
+  font: normal normal normal 16px/1 octicons;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: $grey-color;
+  margin-right: 3px;
 }
+.mega-octicon { font-size: 32px; }
+.really-more-mega { font-size: 6em; }
+.octicon-mark-github:before { content: '\f00a'}
+.octicon-file-text:before { content: '\f011'}
+.octicon-flame:before { content: '\f0d2'}
+.octicon-heart:before{ content: '\2665'}

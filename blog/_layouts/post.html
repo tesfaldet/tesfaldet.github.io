@@ -6,9 +6,13 @@ layout: default
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
     <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time> •
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+      {% if page.categories.size != 0 or page.tags.size != 0 %} •{% endif %}
       {% for category in page.categories %}
-      <span itemprop="keywords" class="label">{{ category }}</span>
+        <a href="/blog/categories/#{{ category }}"><span itemprop="keywords" class="label category">{{ category }}</span></a>
+      {% endfor %}
+      {% for tag in page.tags %}
+        <a href="/blog/tags/#{{ tag }}"><span itemprop="keywords" class="label tag">{{ tag }}</span></a>
       {% endfor %}
     </p>
   </header>
