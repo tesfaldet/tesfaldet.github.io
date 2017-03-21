@@ -31,9 +31,16 @@
 .really-more-mega { font-size: 6em; }
 .octicon-mark-github:before { content: '\f00a'}
 .octicon-file-text:before { content: '\f011'}
+.octicon-mark-person:before { content: '\f059' }
+.octicon-mail:before { content: '\f03b' }
 
 html {
   height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 p {
@@ -49,11 +56,6 @@ p {
 	text-align: center;
 }
 
-/* 3D box */
-@-webkit-keyframes spin {
-      from { -webkit-transform: rotateY(0) rotateX(0deg) rotateZ(0deg); }
-      to   { -webkit-transform: rotateY(360deg) rotateX(360deg) rotateZ(360deg); }
-}
 #container {
   position: absolute;
   top: 0;
@@ -68,14 +70,6 @@ p {
   -webkit-perspective: 500;
   perspective: 500;
 }
-div.space {
-  width: 200px;
-  height: 200px;
-  -webkit-transform-style: preserve-3d;
-  -webkit-animation: spin 10s infinite linear;
-  transform-style: preserve-3d;
-  animation: spin 10s infinite linear;
-}
 .space div{
   position: absolute;
   top: 0px;
@@ -85,42 +79,48 @@ div.space {
   -webkit-box-sizing: border-box;
 }
 .space img { width: 100%; height: 100%; }
-.space .back:hover {
-	background-image: url("../images/sadprofile.png");
+.space {
+  -webkit-transform: rotateY(10deg) rotateX(20deg) rotateZ(10deg);
+}
+.space .top:hover {
+	background-image: url("../images/profilest.png");
 }
 .space .top {
 	-webkit-transition: -webkit-transform .33s;
 	transition: transform .33s;
-  -webkit-transform: rotateX(-90deg) translateZ(-100px);
+  -webkit-transform: none;
+  background-image: url("../images/profile.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 .space .bottom {
 	-webkit-transition: -webkit-transform .33s;
 	transition: transform .33s;
-  -webkit-transform: rotateX(90deg) translateZ(-100px);
-  background-color: #E5938B;
+  -webkit-transform: translateX(400px);
+  background-color: #282828;
 }
 .space .left {
 	-webkit-transition: -webkit-transform .33s;
 	transition: transform .33s;
-  -webkit-transform: rotateY(90deg) translateZ(-100px);
-  background-color: #ED4952;
+  -webkit-transform: translateX(-200px);
+  background-color: #85AF4B;
 }
 .space .right {
 	-webkit-transition: -webkit-transform .33s;
 	transition: transform .33s;
-  -webkit-transform: rotateY(270deg) translateZ(-100px);
-  background-color: #281E29;
+  -webkit-transform: translateX(200px);
+  background-color: #8ac618;
 }
 .space .front {
 	-webkit-transition: -webkit-transform .33s;
 	transition: transform .33s;
-  -webkit-transform: rotateY(0deg) translateZ(-100px);
+  -webkit-transform: translateY(200px);
+  background-color: #004f16;
+  z-index: 1;
 }
 .space .back {
 	-webkit-transition: -webkit-transform .33s;
 	transition: transform .33s;
-  -webkit-transform: rotateY(180deg) translateZ(-100px);
-  background-image: url("../images/profile.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  -webkit-transform: translateY(-200px);
+  background-color: #f67164;
 }
