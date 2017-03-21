@@ -7,62 +7,21 @@ window.onload = function() {
 		back = document.getElementsByClassName('back')[0],
 		space = document.getElementsByClassName('space')[0];
 
-	function flatten() {
-		top.style["-webkit-transform"] = "none";
-		bottom.style["-webkit-transform"] = "translateX(400px)";
-		left.style["-webkit-transform"] = "translateX(-200px)";
-		right.style["-webkit-transform"] = "translateX(200px)";
+	function enlarge() {
+		front.style["-webkit-transform"] = "translateY(150px) scale(2)";
+		front.innerHTML = "<p style=\"font-size: 0.85em; text-align: left; margin: 10px;\">MSc student studying computer vision and machine learning at York University.</p><p style=\"font-size: 0.85em; text-align: left; margin: 10px;\">Advisors: Dr. Kosta Derpanis and Dr. Marcus Brubaker.</p><p style=\"font-size: 0.85em; text-align: left; margin: 10px;\">Interested in: texture synthesis, style transfer, and motion analysis.</p>"
+	}
+
+	function reset() {
 		front.style["-webkit-transform"] = "translateY(200px)";
-		back.style["-webkit-transform"] = "translateY(-200px)";
-		space.style["-webkit-animation"] = "none";
-		space.style["-webkit-transform"] = "rotateY(10deg) rotateX(20deg) rotateZ(10deg)";
+		front.innerHTML = "<p>About Me</p><span class=\"mega-octicon really-more-mega octicon-mark-person\"></span>"
 	}
 
-	function unflatten() {
-		top.style["-webkit-transform"] = "rotateX(-90deg) translateZ(-100px)";
-		bottom.style["-webkit-transform"] = "rotateX(90deg) translateZ(-100px)";
-		left.style["-webkit-transform"] = "rotateY(90deg) translateZ(-100px)";
-		right.style["-webkit-transform"] = "rotateY(270deg) translateZ(-100px)";
-		front.style["-webkit-transform"] = "rotateY(0deg) translateZ(-100px)";
-		back.style["-webkit-transform"] = "rotateY(180deg) translateZ(-100px)";
-		space.style["-webkit-animation"] = "spin 10s infinite linear";
-	}
-
-	top.onmouseover = function() {
-		flatten();
-	};
-	bottom.onmouseover = function() {
-		flatten();
-	};
-	left.onmouseover = function() {
-		flatten();
-	};
-	right.onmouseover = function() {
-		flatten();
-	};
 	front.onmouseover = function() {
-		flatten();
-	};
-	back.onmouseover = function() {
-		flatten();
+		enlarge();
 	};
 
-	top.onmouseout = function() {
-		unflatten();
-	};
-	bottom.onmouseout = function() {
-		unflatten();
-	};
-	left.onmouseout = function() {
-		unflatten();
-	};
-	right.onmouseout = function() {
-		unflatten();
-	};
 	front.onmouseout = function() {
-		unflatten();
-	};
-	back.onmouseout = function() {
-		unflatten();
+		reset();
 	};
 };
