@@ -1,0 +1,11 @@
+<ul class="news-post-list">
+{% for post in site.posts %}
+  <li>
+    <span class="news-post-date">{{ post.date | date: '%B %d, %Y' }}</span>
+
+    <div class="news-post-excerpt">
+      {{ post.excerpt }}
+    </div>
+  </li>
+{%endfor%}
+</ul>
