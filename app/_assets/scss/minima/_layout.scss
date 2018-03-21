@@ -92,6 +92,10 @@
       top: 30px;
       text-align: center;
       font-size: 38px;
+
+      @include media-query($on-palm) {
+        display: none;
+      }
     }
 
     .page-header-pattern {
@@ -105,7 +109,7 @@
 
         @keyframes anim {
           from {transform: translateY(0px);}
-          to {transform: translateY(6px);}
+          to {transform: translateY(10px);}
         }
 
         #pat1 {
@@ -114,17 +118,17 @@
 
         #pat2 {
           animation: anim 2s ease-in-out infinite alternate;
-          animation-delay: 0.4s;
+          animation-delay: 0.8s;
         }
 
         #pat3 {
           animation: anim 2s ease-in-out infinite alternate;
-          animation-delay: 0.8s;
+          animation-delay: 1.6s;
         }
 
         #pat4 {
           animation: anim 2s ease-in-out infinite alternate;
-          animation-delay: 1.2s;
+          animation-delay: 2.4s;
         }
       }
     }
@@ -137,14 +141,56 @@
   }
 }
 
-.header {
-  margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit;
-  color: white;
-  background-color: $brand-color;
-  text-align: center;
+.header-wrapper {
+  position: relative;
+  overflow: hidden;
   height: 60px;
-  line-height: 60px;
+  margin-bottom: 30px;
+
+  svg {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 60px;
+
+    circle {
+      fill: none;
+      stroke: rgb(159, 227, 28);
+      stroke-width: 7.28px;
+      pointer-events: all;
+
+      @include transition(stroke 2s);
+
+      &:hover {
+        stroke: white;
+
+        @include transition(stroke 0s);
+      }
+    }
+
+    path {
+      fill: none;
+      stroke: rgb(159, 227, 28);
+      stroke-width: 3.39px;
+      pointer-events: all;
+
+      @include transition(stroke 2s);
+
+      &:hover {
+        stroke: white;
+
+        @include transition(stroke 0s);
+      }
+    }
+  }
+
+  .header {
+    color: white;
+    display: table;
+    position: relative;
+    z-index: 2;
+    margin: 12px auto;
+  }
 }
 
 
@@ -250,7 +296,7 @@
 
 .pub-col {
   float: left;
-  margin-bottom: $spacing-unit / 2;
+  // margin-bottom: $spacing-unit / 2;
   padding-left: $spacing-unit / 2;
 }
 
@@ -275,6 +321,7 @@
 
   .pub-col-1 {
     text-align: center;
+    margin-bottom: $spacing-unit / 2;
     img {
       width: 60%;
     }

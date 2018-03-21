@@ -205,9 +205,7 @@ pre {
  * Wrapper
  */
 .wrapper {
-  p {
-    margin-bottom: $spacing-unit / 2;
-  }
+  margin-bottom: $spacing-unit / 2;
 }
 
 .page-wrapper {
@@ -232,6 +230,7 @@ pre {
   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 0;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
   @extend %clearfix;
