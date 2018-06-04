@@ -1,0 +1,5 @@
+---
+layout: post
+date:   2018-05-08 -0500
+---
+Awarded the [NSERC Canada Graduate Scholarship-Doctoral (CGS-D)](http://www.nserc-crsng.gc.ca/Students-Etudiants/PG-CS/BellandPostgrad-BelletSuperieures_eng.asp).
