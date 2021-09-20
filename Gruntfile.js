@@ -4,7 +4,9 @@ module.exports = function(grunt) {
     // Show elapsed time after tasks run
     require('time-grunt')(grunt);
     // Load all Grunt tasks
-    require('jit-grunt')(grunt);
+    require('jit-grunt')(grunt, {
+        postcss: '@lodder/grunt-postcss'
+    });
 
     // require build control
     grunt.loadNpmTasks('grunt-build-control');
@@ -18,7 +20,7 @@ module.exports = function(grunt) {
         watch: {
             sass: {
                 files: ['<%= app.source %>/_assets/scss/**/*.{scss,sass}'],
-                tasks: ['sass:server', 'autoprefixer']
+                tasks: ['sass:server', 'postcss']
             },
             scripts: {
                 files: ['<%= app.source %>/_assets/js/**/*.{js}'],
@@ -151,12 +153,9 @@ module.exports = function(grunt) {
             }
         },
         sass: {
-            options: {
-                includePaths: ['bower_components/bootstrap-sass/assets/stylesheets']
-            },
             server: {
                 options: {
-                    sourceMap: true
+                    sourcemap: 'auto'
                 },
                 files: [{
                     expand: true,
@@ -168,7 +167,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 options: {
-                    outputStyle: 'compressed'
+                    style: 'compressed'
                 },
                 files: [{
                     expand: true,
@@ -189,9 +188,11 @@ module.exports = function(grunt) {
                 dest: '<%= app.dist %>/<%= app.baseurl %>/css/main.css'
             }
         },
-        autoprefixer: {
+        postcss: {
             options: {
-                browsers: ['last 3 versions']
+                processors: [
+                    require('autoprefixer')()
+                  ]
             },
             server: {
                 files: [{
@@ -281,7 +282,7 @@ module.exports = function(grunt) {
             dist: {
                 options: {
                     dir: '<%= app.dist %>/<%= app.baseurl %>',
-                    remote: 'git@github.com:tesfaldet/matthewtesfaldet.git',
+                    remote: 'git@github.com:tesfaldet/mtesfaldet.net.git',
                     branch: 'gh-pages',
                     commit: true,
                     push: true,
@@ -301,7 +302,7 @@ module.exports = function(grunt) {
             'clean:server',
             'jekyll:server',
             'sass:server',
-            'autoprefixer:server',
+            'postcss:server',
             'uglify:server',
             'connect:livereload',
             'watch'
@@ -320,7 +321,7 @@ module.exports = function(grunt) {
         'svgmin',
         'sass:dist',
         'uncss',
-        'autoprefixer',
+        'postcss',
         'cssmin',
         'uglify:dist',
         'critical',
