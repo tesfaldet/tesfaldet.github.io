@@ -3,12 +3,18 @@
 // Fonts
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Merriweather+Sans:400,400italic,700,700italic);
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700&display=swap');
 
 // Define defaults for each variable.
 $base-font-family: "Merriweather", Georgia, "Times New Roman", serif;
-$base-font-family-sans: "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-family-sans: "Work Sans", "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
+$base-font-weight-extralight: 200 !default;
+$base-font-weight-light: 300 !default;
+$base-font-weight-medium: 500 !default;
+$base-font-weight-semibold: 600 !default;
+$base-font-weight-bold: 700 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
@@ -16,7 +22,7 @@ $spacing-unit:     30px !default;
 
 $text-color:       #515151 !default;
 $background-color: white !default;
-$brand-color:      rgb(138, 198, 24) !default;
+$brand-color:      rgb(199, 63, 110) !default;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;

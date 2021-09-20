@@ -88,10 +88,12 @@
       position: absolute;
       margin-bottom: 0;
       color: white;
-      left: calc(50% - 220px);
+      left: calc(50% - 255px);
       top: 30px;
       text-align: center;
-      font-size: 38px;
+      font-size: 45px;
+      font-weight: $base-font-weight-extralight;
+      line-height: 50px;
 
       @include media-query($on-palm) {
         display: none;
@@ -155,7 +157,7 @@
 
     circle {
       fill: none;
-      stroke: rgb(159, 227, 28);
+      stroke: rgb(210, 102, 140);
       stroke-width: 7.28px;
       pointer-events: all;
 
@@ -170,7 +172,7 @@
 
     path {
       fill: none;
-      stroke: rgb(159, 227, 28);
+      stroke: rgb(210, 102, 140);
       stroke-width: 3.39px;
       pointer-events: all;
 
@@ -190,6 +192,7 @@
     position: relative;
     z-index: 2;
     margin: 12px auto;
+    font-weight: $base-font-weight-medium;
   }
 }
 
@@ -289,6 +292,12 @@
         &:hover {
           color: $brand-color;
         }
+      }
+    }
+
+    .pub-title {
+      h3 {
+        font-weight: $base-font-weight-semibold;
       }
     }
   }
