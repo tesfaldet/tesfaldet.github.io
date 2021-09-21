@@ -27,11 +27,23 @@ module.exports = function(grunt) {
                 tasks: ['uglify']
             },
             jekyll: {
-                files: ['<%= app.source %>/**/*.{html,yml,md,mkd,markdown,bib}'],
+                files: ['<%= app.source %>/**/*.{html,yml,md,mkd,markdown,bib}','<%= app.source %>/_includes/**/*.{svg}'],
                 tasks: ['jekyll:server']
             },
             images: {
                 files: ['<%= app.source %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'],
+                tasks: ['copy:server']
+            },
+            videos: {
+                files: ['<%= app.source %>/vid/**/*.{mp4}'],
+                tasks: ['copy:server']
+            },
+            pdfs: {
+                files: ['<%= app.source %>/pdf/**/*.{pdf}'],
+                tasks: ['copy:server']
+            },
+            favicons: {
+                files: ['<%= app.source %>/favicons/**/*.{jpg,jpeg,png,svg,ico,webmanifest,xml}'],
                 tasks: ['copy:server']
             },
             livereload: {
@@ -39,10 +51,13 @@ module.exports = function(grunt) {
                     livereload: '<%= connect.options.livereload %>'
                 },
                 files: [
-                    '.jekyll/**/*.{html,yml,md,mkd,markdown,bib}',
+                    '.jekyll/**/*.{html,yml,md,mkd,markdown,bib,svg}',
                     '.tmp/<%= app.baseurl %>/css/*.css',
                     '.tmp/<%= app.baseurl %>/js/*.js',
-                    '.tmp/<%= app.baseurl %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
+                    '.tmp/<%= app.baseurl %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
+                    '.tmp/<%= app.baseurl %>/vid/**/*.{mp4}',
+                    '.tmp/<%= app.baseurl %>/pdf/**/*.{pdf}',
+                    '.tmp/<%= app.baseurl %>/favicons/**/*.{jpg,jpeg,png,svg,ico,webmanifest,xml}'
                 ]
             }
         },
@@ -273,7 +288,7 @@ module.exports = function(grunt) {
                     expand: true,
                     dot: true,
                     cwd: '<%= app.source %>',
-                    src: ['img/**/*'],
+                    src: ['img/**/*', 'pdf/**/*', 'favicons/**/*', 'vid/**/*'],
                     dest: '.tmp/<%= app.baseurl %>'
                 }]
             }

@@ -259,6 +259,10 @@
 
   .pub {
 
+    display: inline-block;
+    margin-bottom: calc(#{$spacing-unit} / 2);
+    width: 100%;
+
     .pub-authors {
       margin-bottom: calc(#{$spacing-unit} / 2);
     }
@@ -307,6 +311,14 @@
   float: left;
   // margin-bottom: $spacing-unit / 2;
   padding-left: $spacing-unit / 2;
+  
+  iframe {
+    width: 100%;
+  }
+
+  video {
+    width: 100%;
+  }
 }
 
 .pub-col-1 {
