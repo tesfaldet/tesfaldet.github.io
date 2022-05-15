@@ -25,9 +25,14 @@ google_analytics: UA-74037692-3
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-last-modified-at
 exclude:
   - Gemfile
   - Gemfile.lock
+
+# Optional. The default date format, used if none is specified in the tag.
+last-modified-at:
+  date-format: '%y-%b-%d'
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
