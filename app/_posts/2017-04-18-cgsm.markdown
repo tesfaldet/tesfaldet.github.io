@@ -1,5 +1,4 @@
 ---
-layout: posts
-date:   2017-04-18 -0500
+date: 2017-04-18 -0500
 ---
 Awarded the [NSERC Canada Graduate Scholarship-Master's (CGS-M)](http://www.nserc-crsng.gc.ca/Students-Etudiants/PG-CS/CGSM-BESCM_eng.asp).
