@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 date:   2017-04-18 -0500
 ---
 Awarded the [Ontario Graduate Scholarship (OGS)](http://gradstudies.yorku.ca/current-students/student-finances/funding-awards/ogs/). Declined in favour of NSERC CGS-M.
