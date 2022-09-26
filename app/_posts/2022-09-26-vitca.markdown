@@ -1,0 +1,4 @@
+---
+date: 2022-09-26 -0500
+---
+Paper accepted at [NeurIPS 2022](https://neurips.cc/Conferences/2022): "Attention-based Neural Cellular Automata." It's been a while since my last publish! The camera-ready paper will be posted on arXiv soon, code will be shared on Github shortly afterward.
