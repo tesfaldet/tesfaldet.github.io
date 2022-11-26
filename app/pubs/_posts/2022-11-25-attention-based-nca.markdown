@@ -1,5 +1,5 @@
 ---
-date: 2022-11-28 -0500
+date: 2022-11-25 -0500
 title: Attention-based Neural Cellular Automata
 teaser: |
   <video controls>
@@ -16,6 +16,6 @@ links:
     name: Code (coming end of 2022)
     url: /#
   -
-    name: Project Page
-    url: /pubs/attention-based-nca.html
+    name: Project Page (coming end of 2022)
+    url: /#
 ---
