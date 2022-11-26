@@ -38,9 +38,30 @@ future: true
 show_drafts: true
 
 defaults:
-  -
-    scope:
-      path: "_posts"
+  - scope:
+      path: "news/_posts"
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
-      layout: "post"
+      layout: "news_post"
+  - scope:
+      path: "pubs/_posts"
+      type: "posts"
+    values:
+      layout: "pub_post"
+  - scope:
+      path: "pubs"
+      type: "pages"
+    values:
+      layout: "pub_page"
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+  - scope:
+      path: "assets/vid"
+    values:
+      video: true
+  - scope:
+      path: "assets/pdf"
+    values:
+      pdf: true

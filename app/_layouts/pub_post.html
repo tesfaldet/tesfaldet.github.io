@@ -1,0 +1,42 @@
+---
+layout: default_post
+---
+<li class="pub-post">
+  <div class="pub-post-col pub-post-col-1">
+    {{ page.teaser }}
+  </div>
+  <div class="pub-post-col pub-post-col-2">
+    <div class="pub-post-title">
+      <h3>
+        {{ page.title }}
+      </h3>
+    </div>
+    <div class="pub-post-authors">
+      {% for author in page.authors -%}
+        {% assign auth = site.data.authors[author] -%}
+        {% if forloop.first == false and forloop.last == false %}, {% endif -%}
+        {% if forloop.last %}, and {% endif %}
+        {{ auth.firstname }} {{ auth.lastname -}}
+      {% endfor %}
+    </div>
+    <div class="pub-post-venue">
+      {{ page.venue }}
+    </div>
+    <div class="pub-post-links">
+      {% for link in page.links -%}
+        <a href={{ link.url }}><div>{{ link.name }}</div></a>
+      {% endfor -%}
+    </div>
+    <!-- <div class="pub-bib">
+      {% highlight text %}
+      @inproceedings{tesfaldet2018two,
+        title={Two-Stream Convolutional Networks for Dynamic Texture Synthesis},
+        author={Tesfaldet, Mattie and Brubaker, Marcus A. and Derpanis, Konstantinos G.},
+        booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+        pages={6703--6712},
+        year={2018}
+      }
+      {% endhighlight %}
+    </div> -->
+  </div>
+</li>

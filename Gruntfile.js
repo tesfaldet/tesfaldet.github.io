@@ -31,19 +31,19 @@ module.exports = function(grunt) {
                 tasks: ['jekyll:server']
             },
             images: {
-                files: ['<%= app.source %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'],
+                files: ['<%= app.source %>/assets/img/**/*.{gif,jpg,jpeg,png,svg,webp}'],
                 tasks: ['copy:server']
             },
             videos: {
-                files: ['<%= app.source %>/vid/**/*.{mp4}'],
+                files: ['<%= app.source %>/assets/vid/**/*.{mp4}'],
                 tasks: ['copy:server']
             },
             pdfs: {
-                files: ['<%= app.source %>/pdf/**/*.{pdf}'],
+                files: ['<%= app.source %>/assets/pdf/**/*.{pdf}'],
                 tasks: ['copy:server']
             },
             favicons: {
-                files: ['<%= app.source %>/favicons/**/*.{jpg,jpeg,png,svg,ico,webmanifest,xml}'],
+                files: ['<%= app.source %>/assets/favicons/**/*.{jpg,jpeg,png,svg,ico,webmanifest,xml}'],
                 tasks: ['copy:server']
             },
             livereload: {
@@ -54,10 +54,10 @@ module.exports = function(grunt) {
                     '.jekyll/**/*.{html,yml,md,mkd,markdown,bib,svg}',
                     '.tmp/<%= app.baseurl %>/css/*.css',
                     '.tmp/<%= app.baseurl %>/js/*.js',
-                    '.tmp/<%= app.baseurl %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
-                    '.tmp/<%= app.baseurl %>/vid/**/*.{mp4}',
-                    '.tmp/<%= app.baseurl %>/pdf/**/*.{pdf}',
-                    '.tmp/<%= app.baseurl %>/favicons/**/*.{jpg,jpeg,png,svg,ico,webmanifest,xml}'
+                    '.tmp/<%= app.baseurl %>/assets/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
+                    '.tmp/<%= app.baseurl %>/assets/vid/**/*.{mp4}',
+                    '.tmp/<%= app.baseurl %>/assets/pdf/**/*.{pdf}',
+                    '.tmp/<%= app.baseurl %>/assets/favicons/**/*.{jpg,jpeg,png,svg,ico,webmanifest,xml}'
                 ]
             }
         },
@@ -266,9 +266,9 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= app.dist %>/<%= app.baseurl %>/img',
+                    cwd: '<%= app.dist %>/<%= app.baseurl %>/assets/img',
                     src: '**/*.{jpg,jpeg,png,gif}',
-                    dest: '<%= app.dist %>/<%= app.baseurl %>/img'
+                    dest: '<%= app.dist %>/<%= app.baseurl %>/assets/img'
                 }]
             }
         },
@@ -276,9 +276,9 @@ module.exports = function(grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= app.dist %>/<%= app.baseurl %>/img',
+                    cwd: '<%= app.dist %>/<%= app.baseurl %>/assets/img',
                     src: '**/*.svg',
-                    dest: '<%= app.dist %>/<%= app.baseurl %>/img'
+                    dest: '<%= app.dist %>/<%= app.baseurl %>/assets/img'
                 }]
             }
         },
@@ -288,7 +288,7 @@ module.exports = function(grunt) {
                     expand: true,
                     dot: true,
                     cwd: '<%= app.source %>',
-                    src: ['img/**/*', 'pdf/**/*', 'favicons/**/*', 'vid/**/*'],
+                    src: ['assets/img/**/*', 'assets/pdf/**/*', 'assets/favicons/**/*', 'assets/vid/**/*'],
                     dest: '.tmp/<%= app.baseurl %>'
                 }]
             }

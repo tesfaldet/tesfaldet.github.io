@@ -1,0 +1,45 @@
+mattie:
+  firstname: Mattie
+  lastname: Tesfaldet
+  github: tesfaldet
+  twitter: mattierialgirl
+  website: https://mtesfaldet.net
+  affiliations:
+    - McGill University
+    - Mila
+derek:
+  firstname: Derek
+  lastname: Nowrouzezahrai
+  twitter: DerekRenderling
+  website: https://www.cim.mcgill.ca/~derek/
+  affiliations:
+    - McGill University
+    - Mila
+chris:
+  firstname: Christopher
+  lastname: Pal
+  twitter: chrisjpal
+  website: https://sites.google.com/view/christopher-pal
+  affiliations:
+    - Polytechnique Montreal
+    - Mila
+    - CIFAR
+xavier:
+  firstname: Xavier
+  lastname: Snelgrove
+  twitter: wxswxs
+  website: https://wxs.ca
+  affiliations:
+    - Probably Studios
+david:
+  firstname: David
+  lastname: Vazquez
+kosta:
+  firstname: Konstantinos G.
+  lastname: Derpanis
+marcus:
+  firstname: Marcus A.
+  lastname: Brubaker
+nariman:
+  firstname: Nariman
+  lastname: Saftarli

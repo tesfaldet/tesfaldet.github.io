@@ -1,0 +1,18 @@
+---
+date: 2019-09-20 -0500
+title: Fourier-CPPNs for Image Synthesis
+teaser: |
+  <video controls>
+    <source src="/assets/vid/fccpn_interpolation.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+authors: [mattie, xavier, david]
+venue: ICCV Workshops 2019
+links:
+  -
+    name: Paper
+    url: https://openaccess.thecvf.com/content_ICCVW_2019/papers/CVFAD/Tesfaldet_Fourier-CPPNs_for_Image_Synthesis_ICCVW_2019_paper.pdf
+  -
+    name: Code
+    url: https://github.com/tesfaldet/fourier-cppn/tree/master
+---
