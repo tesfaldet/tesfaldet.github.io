@@ -24,19 +24,8 @@ layout: default_post
     </div>
     <div class="pub-post-links">
       {% for link in page.links -%}
-        <a href={{ link.url }}><div>{{ link.name }}</div></a>
+        <a href="{{ link.url }}"><div>{{ link.name }}</div></a>
       {% endfor -%}
     </div>
-    <!-- <div class="pub-bib">
-      {% highlight text %}
-      @inproceedings{tesfaldet2018two,
-        title={Two-Stream Convolutional Networks for Dynamic Texture Synthesis},
-        author={Tesfaldet, Mattie and Brubaker, Marcus A. and Derpanis, Konstantinos G.},
-        booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-        pages={6703--6712},
-        year={2018}
-      }
-      {% endhighlight %}
-    </div> -->
   </div>
 </li>
