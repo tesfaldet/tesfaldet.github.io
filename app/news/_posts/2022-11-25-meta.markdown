@@ -1,6 +1,4 @@
 ---
 date: 2022-11-25 -0500
 ---
-I recently accepted a part-time visiting researcher position at Meta in Montréal under [Dr. Adriana Romero](https://sites.google.com/site/adriromsor/home?authuser=0). I will be officially starting on Dec 5th! Looking forward to continuing my self-organizing systems research and learning new things over there.
-
-On another note, I also recently got elected as a [Lab Representative at Mila](https://mila.quebec/en/mila-lab-reps/). Quite a lot of responsibilities this year :)
+I recently accepted a Visiting Researcher position at Meta AI under [Dr. Adriana Romero](https://sites.google.com/site/adriromsor/home?authuser=0). I also recently got elected as a [Lab Representative at Mila](https://mila.quebec/en/mila-lab-reps/). Quite a lot of responsibilities this year :)
