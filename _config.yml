@@ -19,7 +19,7 @@ description: > # this means to ignore newlines until "baseurl:"
   My personal website."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mtesfaldet.net" # the base hostname & protocol for your site, e.g. http://example.com
-google_analytics: UA-74037692-3
+google_analytics: G-SWPYR9G1QP
 
 # Build settings
 markdown: kramdown
