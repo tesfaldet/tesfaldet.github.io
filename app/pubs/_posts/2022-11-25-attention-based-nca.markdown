@@ -11,11 +11,8 @@ venue: NeurIPS 2022
 links:
   -
     name: Paper
-    url: https://openreview.net/forum?id=9t24EBSlZOa
+    url: https://proceedings.neurips.cc/paper_files/paper/2022/file/361e5112d2eca09513bbd266e4b2d2be-Paper-Conference.pdf
   -
-    name: Code (coming end of 2022)
-    url: /#
-  -
-    name: Project Page (coming end of 2022)
-    url: /#
+    name: Supplemental (includes code)
+    url: https://proceedings.neurips.cc/paper_files/paper/2022/file/361e5112d2eca09513bbd266e4b2d2be-Supplemental-Conference.zip
 ---
