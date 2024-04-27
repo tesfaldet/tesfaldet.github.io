@@ -1,0 +1,20 @@
+name: mtesfaldet.net
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - ruby
+  - c-compiler
+  - compilers
+  - cxx-compiler
+  - nodejs
+  - git
+
+  # conda env create -f environment.yaml
+  # conda activate mtesfaldet.net
+  # export SDKROOT=$(xcrun --sdk macosx --show-sdk-path)
+  # bundle install
+  # npm install
+  # fish_add_path (pwd)/node_modules/.bin

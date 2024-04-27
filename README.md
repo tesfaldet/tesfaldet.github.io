@@ -9,8 +9,13 @@ My personal, yet simple, website. Static templating via [jekyll](https://jekyllr
 
 ## Installation
 
-1. `gem install bundler` to install Ruby project environment manager Bundler.
-2. `bundle install` to install required gems.
-3. `npm install` to install required npm packages.
-4. `bundle exec grunt serve` for viewing locally.
-
+1. Install dependencies
+```
+  > conda env create -f environment.yaml
+  > conda activate mtesfaldet.net
+  > export SDKROOT=$(xcrun --sdk macosx --show-sdk-path)
+  > bundle install
+  > npm install
+  > fish_add_path (pwd)/node_modules/.bin
+```
+2. `bundle exec grunt serve` for viewing locally.

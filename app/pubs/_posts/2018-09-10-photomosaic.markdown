@@ -2,7 +2,7 @@
 date: 2018-09-10 -0500
 title: Convolutional Photomosaic Generation via Multi-Scale Perceptual Losses
 teaser: |
-  <iframe src="https://drive.google.com/file/d/1hAoeTv0mdlWNlhY1ubyDhuC6DLPWElpS/preview" allow="autoplay"></iframe>
+  <iframe src="https://drive.google.com/file/d/1NqgDIVz-uIr1OF2AK07kmvmF07ft35VW/preview" allow="autoplay"></iframe>
 authors: [mattie, nariman, marcus, kosta]
 venue: ECCV Workshops 2018
 links:
