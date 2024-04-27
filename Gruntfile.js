@@ -135,8 +135,8 @@ module.exports = function(grunt) {
                     removeAttributeQuotes: true,
                     removeRedundantAttributes: true,
                     removeEmptyAttributes: true,
-                    minifyJS: true,
-                    minifyCSS: true
+                    // minifyJS: true,
+                    // minifyCSS: true
                 },
                 files: [{
                     expand: true,
@@ -233,7 +233,7 @@ module.exports = function(grunt) {
                     css: [
                         '<%= app.dist %>/<%= app.baseurl %>/css/main.css'
                     ],
-                    minify: true,
+                    // minify: true,
                     width: 320,
                     height: 480
                 },
@@ -332,14 +332,14 @@ module.exports = function(grunt) {
     grunt.registerTask('build', [
         'clean:dist',
         'jekyll:dist',
-        'imagemin',
+        // 'imagemin',
         'svgmin',
         'sass:dist',
         'uncss',
         'postcss',
         'cssmin',
         'uglify:dist',
-        'critical',
+        // 'critical',
         'htmlmin'
     ]);
 
