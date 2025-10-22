@@ -37,9 +37,21 @@ david:
 kosta:
   firstname: Konstantinos G.
   lastname: Derpanis
+  twitter: CSProfKGD
+  website: https://csprofkgd.github.io
+  affiliations:
+    - York University
+    - Vector Institute
 marcus:
   firstname: Marcus A.
   lastname: Brubaker
 nariman:
   firstname: Nariman
   lastname: Saftarli
+adam:
+  firstname: Adam W.
+  lastname: Harley
+  twitter: AdamWHarley
+  website: https://adamharley.com
+  affiliations:
+    - Stanford University

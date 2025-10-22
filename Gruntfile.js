@@ -195,7 +195,7 @@ module.exports = function(grunt) {
         },
         uncss: {
             options: {
-                htmlroot: '<%= app.dist %>/<%= app.baseurl %>',
+                htmlroot: '<%= app.dist %>',
                 report: 'gzip'
             },
             dist: {

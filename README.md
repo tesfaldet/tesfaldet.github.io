@@ -16,6 +16,6 @@ My personal, yet simple, website. Static templating via [jekyll](https://jekyllr
   > export SDKROOT=$(xcrun --sdk macosx --show-sdk-path)
   > bundle install
   > npm install
-  > fish_add_path (pwd)/node_modules/.bin
+  > fish_add_path -g (pwd)/node_modules/.bin
 ```
 2. `bundle exec grunt serve` for viewing locally.

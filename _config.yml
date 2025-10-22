@@ -49,11 +49,6 @@ defaults:
     values:
       layout: "pub_post"
   - scope:
-      path: "pubs"
-      type: "pages"
-    values:
-      layout: "pub_page"
-  - scope:
       path: "assets/img"
     values:
       image: true

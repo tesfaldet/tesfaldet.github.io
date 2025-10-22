@@ -1,16 +1,16 @@
 <svg viewBox="0 0 1384 1306" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
     <g transform="matrix(1,0,0,1,412.06,-199.217)">
         <g transform="matrix(0.336903,0.580212,-0.557275,0.323585,223.456,200.996)">
-            <path id="pat1" d="M559.815,0L1119.63,1140.4L0,1140.4L559.815,0Z" style="fill:rgb(0,79,22);fill-opacity:0.713726;"/>
+            <path id="pat1" d="M559.815,0L1119.63,1140.4L0,1140.4L559.815,0Z"/>
         </g>
         <g transform="matrix(0.912144,0.40987,-0.40987,0.912144,371.974,-60.6289)">
-            <path id="pat2" d="M312.411,375.463L826.423,1159.3L-201.6,1159.3L312.411,375.463Z" style="fill:rgb(199,63,110);fill-opacity:0.92549;"/>
+            <path id="pat2" d="M312.411,375.463L826.423,1159.3L-201.6,1159.3L312.411,375.463Z"/>
         </g>
         <g transform="matrix(1,0,5.55112e-17,1,63.1925,-116.068)">
-            <circle id="pat3" cx="88.583" cy="1478.74" r="88.583" style="fill:rgb(246,113,100);fill-opacity:0.568627;"/>
+            <circle id="pat3" cx="88.583" cy="1478.74" r="88.583"/>
         </g>
         <g transform="matrix(1.09997,-0.345782,0.70436,2.24065,-1054.51,-1791.08)">
-            <path id="pat4" d="M341.96,1260.65L506.365,1498.3L177.555,1498.3L341.96,1260.65Z" style="fill:rgb(69,77,109);fill-opacity:0.713726;"/>
+            <path id="pat4" d="M341.96,1260.65L506.365,1498.3L177.555,1498.3L341.96,1260.65Z"/>
         </g>
     </g>
 </svg>

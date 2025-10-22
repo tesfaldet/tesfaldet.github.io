@@ -1,11 +1,6 @@
 ---
 date: 2018-12-03 -0500
 title: Interactive CPPNs in GLSL
-teaser: |
-  <video controls>
-    <source src="/assets/vid/interactive_cppn.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
 authors: [xavier, mattie]
 venue: NeurIPS Workshops 2018
 links:
@@ -16,3 +11,7 @@ links:
     name: Code
     url: https://github.com/wxs/cppn-to-glsl
 ---
+<video controls>
+  <source src="{{ '/assets/vid/interactive_cppn.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>

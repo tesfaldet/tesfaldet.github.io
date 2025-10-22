@@ -1,0 +1,14 @@
+---
+date: 2025-10-21 -0500
+title: Generative Point Tracking with Flow Matching
+authors: [mattie, adam, kosta, derek, chris]
+venue: arXiv preprint
+links:
+  -
+    name: Project Page
+    url: https://mtesfaldet.net/genpt_projpage
+---
+<video controls>
+  <source src="{{ '/assets/vid/genpt.mp4' | relative_url }}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>

@@ -5,7 +5,7 @@ channels:
   - defaults
 
 dependencies:
-  - ruby
+  - ruby=3.2.2
   - c-compiler
   - compilers
   - cxx-compiler
@@ -17,4 +17,4 @@ dependencies:
   # export SDKROOT=$(xcrun --sdk macosx --show-sdk-path)
   # bundle install
   # npm install
-  # fish_add_path (pwd)/node_modules/.bin
+  # fish_add_path -g (pwd)/node_modules/.bin

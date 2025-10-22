@@ -1,8 +1,6 @@
 ---
 date: 2018-06-18 -0500
 title: Two-Stream Convolutional Networks for Dynamic Texture Synthesis
-teaser: |
-  <img src="/assets/img/waterfall_styletransfer.gif"/>
 authors: [mattie, marcus, kosta]
 venue: CVPR 2018
 links:
@@ -16,3 +14,4 @@ links:
     name: Project Page
     url: https://ryersonvisionlab.github.io/two-stream-projpage/
 ---
+<img src="{{ '/assets/img/waterfall_styletransfer.gif' | relative_url }}"/>
