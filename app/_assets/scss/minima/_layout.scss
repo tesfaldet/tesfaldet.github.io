@@ -83,7 +83,7 @@
 
   .page-header-wrapper {
     position: relative;
-    height: 400px;
+    height: 100%;
 
     .page-header-title {
       position: absolute;
@@ -106,11 +106,13 @@
       z-index: -1;
       top: -315px;
       left: calc(-295px + 50% - 100px);
-      width: calc(574px + 20%);
-      overflow-x: hidden;
+      width: 610px;
+      height: 765px;
+      overflow: hidden;
 
       svg {
         height: 750px;
+        overflow: visible;
 
         @keyframes anim {
           from {
