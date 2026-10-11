@@ -19,3 +19,10 @@ My personal, yet simple, website. Static templating via [jekyll](https://jekyllr
   > fish_add_path -g (pwd)/node_modules/.bin
 ```
 2. `bundle exec grunt serve` for viewing locally.
+
+3. If having issues viewing locally, try:
+```
+  > conda activate mtesfaldet.net
+  > set -gx SDKROOT (xcrun --sdk macosx --show-sdk-path)
+  > npx grunt serve
+```
